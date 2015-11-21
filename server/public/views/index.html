@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="/styles/style.css">
-	<script type="text/javascript" src="/vendors/jquery.min.js"></script>
-	<script type="text/javascript" src="/vendors/handlebars.min.js"></script>
-        <script type="text/javascript" src="/scripts/app.js"></script>
-    </head>
-    <body>
-    </body>
+  <head>
+    <meta charset='utf-8'>
+    <title>Prime Weekend 02 - Student Info</title>
+    <link rel='stylesheet' href='prime_weekend_02.css'>
+  </head>
+  <body>
+<!-- This title will not be in the template -->
+    <div class ='Page Title'><h3>Eta Class Listing</h3>
+    </div>
 
+    <section>
+
+      <script id="currentStudent" type="text/x-handlebars-template">
+        {{#each eta}}
+      <div><h1>{{this.firstName}}</h1>
+           <h1>{{this.lastName}}</h1>
+      </div>
+      <div>
+      </div>
+        {{/each}}
+
+      </script>
+
+    </section>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+  	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js'></script>
+  	<script src='/scripts/app.js'></script>
+  </body>
 </html>
