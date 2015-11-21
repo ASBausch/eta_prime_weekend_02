@@ -12,13 +12,20 @@
     <section>
 
       <script id="currentStudent" type="text/x-handlebars-template">
-        {{#each eta}}
-      <div><h1>{{this.firstName}}</h1>
-           <h1>{{this.lastName}}</h1>
+<!-- pulls first name and last name from main object array-->
+      <div>
+        <h1>{{firstName}} {{lastName}}</h1>
+      </div>
+<!-- this pulls the movie object array and the index of the name -->
+      <div>
+        <h1>{{favoriteMovies.[0].movieName}}</h1>
       </div>
       <div>
+        <h1>{{favoriteMovies.[1].movieName}}</h1>
       </div>
-        {{/each}}
+      <div>
+        <h1>{{favoriteMovies.[2].movieName}}</h1>
+      </div>
 
       </script>
 
