@@ -2,37 +2,40 @@
   <head>
     <meta charset='utf-8'>
     <title>Prime Weekend 02 - Student Info</title>
-    <link rel='stylesheet' href='prime_weekend_02.css'>
+    <link rel='stylesheet' href='/styles/style.css'>
   </head>
   <body>
 <!-- This title will not be in the template -->
-    <div class ='Page Title'><h3>Eta Class Listing</h3>
-    </div>
+    <header class ='pageTitle'><h1>Eta Class Listing</h1></header>
 
-    <button class='prevBtn'>Previous</button>
-
-    <section>
-      <script id="currentStudent" type="text/x-handlebars-template">
+    <section class='featured'>
+      <script id='currentStudent' type='text/x-handlebars-template'>
 <!-- pulls first name and last name from main object array-->
 
-      <div>
-        <h1>{{firstName}} {{lastName}}</h1>
+      <div class='displayName'>
+        <h2>{{firstName}} {{lastName}}</h2>
       </div>
 
 <!-- this pulls the movie object array and the index of the name -->
-      <div>
-        <h3>{{favoriteMovies.[0].movieName}}</h3>
+      <div class='movies'>
+        <div class='movie'>
+          <h3>{{favoriteMovies.[0].movieName}}</h3>
+        </div>
+        <div class='movie'>
+          <h3>{{favoriteMovies.[1].movieName}}</h3>
+        </div>
+        <div class='movie right'>
+          <h3>{{favoriteMovies.[2].movieName}}</h3>
+        </div>
       </div>
-      <div>
-        <h3>{{favoriteMovies.[1].movieName}}</h3>
-      </div>
-      <div>
-        <h3>{{favoriteMovies.[2].movieName}}</h3>
-      </div>
-
       </script>
     </section>
-    <button class='nextBtn'>Next</button>
+    <div class='leftBut'>
+      <button class='prevBtn'>Previous</button>
+    </div>
+    <div class='rightBut'>
+      <button class='nextBtn'>Next</button>
+    </div>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
   	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js'></script>
