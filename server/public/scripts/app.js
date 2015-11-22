@@ -1,60 +1,60 @@
 $(document).ready(function() {
+  //index of where the student we are viewing is in the json
   var currentStudentIndex;
-  var students;
-  var studentLength;
 
+  //this hold json object/data from getData
+  var students;
+
+  //this is the amount of students in the object/array
+  var studentLength;
   /*
-  * var source = $('#currentStudent').html();
-  * turns this block of html into a usable handlebars template
+  *turns this block of html into a usable handlebars template,source
+  *must be declared with the html id before it can be compiled by handlebars
+  *the template has to be drawn before getdata because we need placeholders
+  *for the data to go
   */
   var source = $('#currentStudent').html();
-
-  /*
-  turns this block of html into a usable handlebars template,
-  this has to be drawn before getdata because we need a placeholders
-  for the data to go
-  */
   var template = Handlebars.compile(source);
 
+  //calls the ajax function to pull data from the server
   getData();
 
   function getData() {
     $.ajax({url:'/data/eta.json'}).done(function(data) {
       //setting data to students for access ourside of this function
       students = data;
-      /*
-      * generating a random number to choose who is viewed firstName
-      * students.eta.length(length of the array in the json object) as the max
-      */
+
+      //firstName(length of the array in the json object) as the max
       studentLength = students.eta.length - 1;
+
+      //generate random number to to use for starting index
       currentStudentIndex = randomNumber(0, studentLength);
 
-      //calls drawStudent right away
+      //drawStudent upon reciept of data
       drawStudent(currentStudentIndex);
     });
   }
 
-  //sets the index value of the student in the object array
+  //standard  random number generator
   function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  //getting json data at the currentStudentIndex from the server and bonding that data to the template
+  // writes data to the dom
   function drawStudent(currentStudentIndex) {
-    //id of the template, grabs the id and sets the source, a block of
-    //html with placeholders
 
-    //takes the json data and putting it all into the template
+    // bind json data to template
     var html = template(students.eta[currentStudentIndex]);
 
-    //appends the paired data and template to the dom in 'section'
+    // append the templated html to dom
     $('section').html(html);
   }
 
-  //event handler on button click modify current student index and recall drawStudent
+  // event handler to modify currentStudentIndex and recall drawStudent
   $('.nextBtn').on('click', function() {
-    console.log("next click" + currentStudentIndex);
     currentStudentIndex = (currentStudentIndex + 1);
+
+    // reset to index 0 if reach the end
     if (currentStudentIndex > studentLength) {
       currentStudentIndex = 0;
     }
@@ -63,8 +63,9 @@ $(document).ready(function() {
   });
 
   $('.prevBtn').on('click', function() {
-    console.log("previous click" + currentStudentIndex);
     currentStudentIndex = (currentStudentIndex - 1);
+
+    //reset to index 0 if reach the end
     if (currentStudentIndex < 0) {
       currentStudentIndex = studentLength;
     }
