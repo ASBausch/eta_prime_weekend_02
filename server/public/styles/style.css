@@ -1,10 +1,13 @@
+h3 {
+  font-size: 15px;
+}
 button {
   border-radius: 18px;
   text-shadow: 2px 5px 8px #666666;
   font-family: Courier New;
   color: #ffffff;
-  font-size: 33px;
-  background: #3498db;
+  font-size: 20px;
+  background: teal;
   padding: 14px 20px 14px 20px;
   text-decoration: none;
 }
@@ -27,32 +30,32 @@ button {
   width: 80%;
   margin: auto;
   color: black;
-
-
+  padding-top: 75px
 }
 .movies {
-  width: 100%;
-  background-color: pink;
+  width: 75%;
   margin: auto;
+  text-align: center;
+  padding-top: 46px;
 }
 
 .movie {
   display: inline-block;
-  margin: 0px 25px 0px 25px;
+  margin: 0px 25px 10px 25px;
   border: 2px double black;
   text-align: center;
+  padding: 0px 10px 0px 10px;
 }
 
 .right {
   text-align: right;
-  width: 40%;
 }
 
 
 .leftBut {
-  display: inline-block;
-  float: left;
-  background-color: teal;
+  position: fixed;
+  top: 244px;
+  left: 130px;
 }
 
 .prevBtn {
@@ -60,10 +63,10 @@ button {
 }
 
 .rightBut {
-  display: inline-block;
-  float:right;
+  position: fixed;
+  top:244px;
+  right: 130px;
   text-align: right;
-  background-color: teal;
 }
 
 .nextBtn {
@@ -77,5 +80,6 @@ button {
   text-align:center;
   background-color: teal;
   border: 2px double black;
+  border-radius: 18%
 
 }
