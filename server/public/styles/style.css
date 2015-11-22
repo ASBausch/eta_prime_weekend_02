@@ -1,0 +1,81 @@
+button {
+  border-radius: 18px;
+  text-shadow: 2px 5px 8px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 33px;
+  background: #3498db;
+  padding: 14px 20px 14px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.pageTitle {
+  width: 100%;
+  margin: auto;
+  color: black;
+  text-align:center;
+  background-color: teal;
+  font-size: 30px;
+}
+
+.featured {
+  width: 80%;
+  margin: auto;
+  color: black;
+
+
+}
+.movies {
+  width: 100%;
+  background-color: pink;
+  margin: auto;
+}
+
+.movie {
+  display: inline-block;
+  margin: 0px 25px 0px 25px;
+  border: 2px double black;
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  width: 40%;
+}
+
+
+.leftBut {
+  display: inline-block;
+  float: left;
+  background-color: teal;
+}
+
+.prevBtn {
+
+}
+
+.rightBut {
+  display: inline-block;
+  float:right;
+  text-align: right;
+  background-color: teal;
+}
+
+.nextBtn {
+
+}
+
+.displayName {
+  width: 40%;
+  margin: auto;
+  font-size: 25px;
+  text-align:center;
+  background-color: teal;
+  border: 2px double black;
+
+}
