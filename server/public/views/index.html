@@ -9,27 +9,30 @@
     <div class ='Page Title'><h3>Eta Class Listing</h3>
     </div>
 
-    <section>
+    <button class='prevBtn'>Previous</button>
 
+    <section>
       <script id="currentStudent" type="text/x-handlebars-template">
 <!-- pulls first name and last name from main object array-->
+
       <div>
         <h1>{{firstName}} {{lastName}}</h1>
       </div>
+
 <!-- this pulls the movie object array and the index of the name -->
       <div>
-        <h1>{{favoriteMovies.[0].movieName}}</h1>
+        <h3>{{favoriteMovies.[0].movieName}}</h3>
       </div>
       <div>
-        <h1>{{favoriteMovies.[1].movieName}}</h1>
+        <h3>{{favoriteMovies.[1].movieName}}</h3>
       </div>
       <div>
-        <h1>{{favoriteMovies.[2].movieName}}</h1>
+        <h3>{{favoriteMovies.[2].movieName}}</h3>
       </div>
 
       </script>
-
     </section>
+    <button class='nextBtn'>Next</button>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
   	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js'></script>
