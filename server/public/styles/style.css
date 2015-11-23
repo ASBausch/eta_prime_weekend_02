@@ -64,18 +64,14 @@ button:hover {
 }
 
 .leftBut {
-  position: fixed;
-  top: 244px;
-  left: 130px;
+  float: left;
+  margin: 35px;
 }
 
 .rightBut {
-  position: fixed;
-  top:244px;
-  right: 130px;
-  text-align: right;
+  float:right;
+  margin: 35px;
 }
-
 .displayName {
   width: 40%;
   margin: auto;
