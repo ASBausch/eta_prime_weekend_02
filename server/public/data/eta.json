@@ -255,8 +255,8 @@
             ]
         },
         {
-            "firstName": "gwen",
-            "lastName": "paul",
+            "firstName": "Gwen",
+            "lastName": "Paul",
             "favoriteFoods": [
                 "steak",
                 "icecream",
@@ -266,11 +266,11 @@
             "hotLineBling": false,
             "favoriteMovies": [
                 {
-                    "movieName": "knocked up",
+                    "movieName": "Knocked Up",
                     "releaseYear": "2007"
                 },
                 {
-                    "movieName": "the town",
+                    "movieName": "The Town",
                     "releaseYear": "2010"
                 }
             ]
@@ -465,6 +465,31 @@
                 {
                     "movieName": "Repo Man",
                     "releaseYear": "1984"
+                }
+            ]
+        },
+        {
+            "firstName": "Ashley",
+            "lastName": "Steele",
+            "favoriteFoods": [
+                "Sushi",
+                "Korean Short Rib Rice Bowl",
+                "Andouille Sausage",
+                "Mac & Dogs (when I'm lazy)"
+            ],
+            "hotLineBling": "False",
+            "favoriteMovies": [
+                {
+                    "movieName": "Sex & the City",
+                    "releaseYear": "2008"
+                },
+                {
+                    "movieName": "American Gangster",
+                    "releaseYear": "2007"
+                },
+                {
+                    "movieName": "Houseguest",
+                    "releaseYear": "1995"
                 }
             ]
         },
