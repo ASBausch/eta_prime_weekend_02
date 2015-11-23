@@ -3,34 +3,36 @@
     <meta charset='utf-8'>
     <title>Prime Weekend 02 - Student Info</title>
     <link rel='stylesheet' href='/styles/style.css'>
-  </head>
+    <link <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Passion+One' rel='stylesheet' type='text/css'>
   <body>
 <!-- This title will not be in the template -->
     <header class ='pageTitle'><h1>The Eta Bunch</h1></header>
+    <section class='container'>
 
-    <section class='featured'>
-      <script id='currentStudent' type='text/x-handlebars-template'>
+        <script id='currentStudent' type='text/x-handlebars-template'>
 <!-- pulls first name and last name from main object array-->
 
-      <div class='displayName'>
-        <h2>{{firstName}} {{lastName}}</h2>
-      </div>
+        <div class='displayName'>
+          <h2>{{firstName}} {{lastName}}</h2>
+        </div>
 
 <!-- this pulls the movie object array and the index of the name -->
-      <div class='movies'>
-        {{#each favoriteMovies}}
-          <div class='movie'>
-            <h3>{{movieName}}</h3>
-          <!--  <h3>{{releaseYear}}</h3>  -->
-          </div>
-        {{/each}}
+        <div class='movies'>
+          {{#each favoriteMovies}}
+            <div class='movie'>
+              <h3>{{movieName}}</h3>
+            <!--  <h3>{{releaseYear}}</h3>  -->
+            </div>
+          {{/each}}
 
-      </div>
-      </script>
+          </div>
+        </script>
     </section>
+
     <div class='leftBut'>
       <button class='prevBtn'>Previous</button>
     </div>
+
     <div class='rightBut'>
       <button class='nextBtn'>&nbsp&nbspNext&nbsp&nbsp</button>
     </div>

@@ -1,6 +1,8 @@
 
 h1 {
   color: white;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
   }
 
 h3 {
@@ -9,7 +11,7 @@ h3 {
 button {
   border-radius: 18px;
   text-shadow: 2px 5px 8px #666666;
-  font-family: Courier New;
+  font-family: 'Passion One', cursive;
   color: #ffffff;
   font-size: 20px;
   background: teal;
@@ -43,6 +45,8 @@ button:hover {
   padding-top: 75px
 }
 .movies {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
   width: 75%;
   margin: auto;
   text-align: center;
@@ -57,10 +61,6 @@ button:hover {
   padding: 0px 10px 0px 10px;
   background-color: white;
   border-radius: 12px;
-}
-
-.right {
-  text-align: right;
 }
 
 .leftBut {
@@ -79,6 +79,7 @@ button:hover {
 .displayName {
   width: 40%;
   margin: auto;
+  font-family: 'Comfortaa', cursive;
   font-size: 25px;
   text-align:center;
   background-color: teal;

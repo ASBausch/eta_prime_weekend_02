@@ -74,4 +74,7 @@ $(document).ready(function() {
 
   });
 
+  //in order to populate the names of the next and previous students
+  //we would nee to create another template for each button see branch.
+
 });
