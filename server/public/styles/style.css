@@ -2,7 +2,9 @@
 h1 {
   color: white;
   font-family: 'Comfortaa', cursive;
-  font-weight: 700;
+  font-weight: 300;
+  margin: 0 0 80px 0;
+  padding: 4px;
   }
 
 h3 {
@@ -10,11 +12,10 @@ h3 {
 }
 button {
   border-radius: 18px;
-  text-shadow: 2px 5px 8px #666666;
   font-family: 'Passion One', cursive;
-  color: #ffffff;
+  color: #004747;
   font-size: 20px;
-  background: teal;
+  background: #7ABDBD;
   padding: 14px 20px 14px 20px;
   text-decoration: none;
 }
@@ -30,12 +31,11 @@ button:hover {
 }
 
 .pageTitle {
-  width: 100%;
-  margin: auto;
-  color: black;
+  width: 65%;
   text-align:center;
   background-color: teal;
   font-size: 30px;
+  margin: auto;
 }
 
 .featured {
@@ -51,37 +51,49 @@ button:hover {
   margin: auto;
   text-align: center;
   padding-top: 46px;
+  color: #333333;
 }
 
 .movie {
   display: inline-block;
   margin: 0px 25px 10px 25px;
-  border: 2px double black;
+  border-width: 2px;
+  border-color: darkgrey;
+  border-style: solid;
   text-align: center;
   padding: 0px 10px 0px 10px;
-  background-color: white;
+  background-color: #EDF2F5;
   border-radius: 12px;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .leftBut {
   float: left;
-  margin: 35px;
+  margin: 50px;
 }
 
 .rightBut {
   float:right;
-  margin: 35px;
+  margin: 50px;
 }
 .displayName {
   width: 40%;
   margin: auto;
   font-family: 'Comfortaa', cursive;
   font-size: 25px;
+  text-shadow: 2px 5px 8px #666666;
   text-align:center;
   background-color: teal;
-  border: 2px double black;
+  border-width: 4px;
+  border-style: double;
+  border-color: darkgrey;
   border-radius: 18%;
   padding: 0px 8px 0px 8px;
   color: white;
+  transition: background-color .3s linear .3s;
+}
 
+.displayName:hover {
+  color: teal;
+  background-color: white;
 }

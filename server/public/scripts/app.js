@@ -46,8 +46,12 @@ $(document).ready(function() {
     // bind json data to template
     var html = template(students.eta[currentStudentIndex]);
 
-    // append the templated html to dom
-    $('section').html(html);
+    // fades the drawn section in and out every time it is drawn while
+    //appending the templated html to dom
+    $('section').fadeOut(500, function() {
+      $('section').html(html);
+    }).fadeIn(500);
+
   }
 
   // event handler to modify currentStudentIndex and recall drawStudent
@@ -71,7 +75,6 @@ $(document).ready(function() {
     }
 
     drawStudent(currentStudentIndex);
-
   });
 
   //in order to populate the names of the next and previous students
