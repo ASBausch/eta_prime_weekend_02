@@ -6,7 +6,7 @@
   </head>
   <body>
 <!-- This title will not be in the template -->
-    <header class ='pageTitle'><h1>Eta Class Listing</h1></header>
+    <header class ='pageTitle'><h1>The Eta Bunch</h1></header>
 
     <section class='featured'>
       <script id='currentStudent' type='text/x-handlebars-template'>
@@ -18,15 +18,13 @@
 
 <!-- this pulls the movie object array and the index of the name -->
       <div class='movies'>
-        <div class='movie'>
-          <h3>{{favoriteMovies.[0].movieName}}</h3>
-        </div>
-        <div class='movie'>
-          <h3>{{favoriteMovies.[1].movieName}}</h3>
-        </div>
-        <div class='movie right'>
-          <h3>{{favoriteMovies.[2].movieName}}</h3>
-        </div>
+        {{#each favoriteMovies}}
+          <div class='movie'>
+            <h3>{{movieName}}</h3>
+          <!--  <h3>{{releaseYear}}</h3>  -->
+          </div>
+        {{/each}}
+
       </div>
       </script>
     </section>
